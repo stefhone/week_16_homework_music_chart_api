@@ -1,38 +1,91 @@
-.App {
+/* Homework */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #aeaeae;
+    margin: 0;
+    padding: 3em;
+    background: #202020;
+    border-bottom: 2em solid #323232;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  color: #FFF;
+}
+
+#app {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+hr {
+  border-top: .5px solid #343434;
+  border-bottom: .5px solid #343434;
+  margin: 2em 0;
+}
+
+.align-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-apple-music {
+  fill: #FFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-list {
+  padding: 2em 2em 4em;
+}
+
+ol {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.list-item {
+  padding: 0;
+  margin: 1em;
+  flex: 1 2 15%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 40.625em) {
+  .list-item {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.list-item:hover, .list-item:focus {
+  -webkit-transform: scale3d(1.025, 1.025, 1.025);
+  transform: scale3d(1.025, 1.025, 1.025);
+}
+
+.list-item h4, .list-item p {
+  padding: 0;
+  margin: .5em 0
+}
+
+button {
+  cursor: pointer;
+  margin: 1em;
+  padding: .5em;
+  font-size: 1em;
+  width: 200px;
+  color: #FFF;
+  background: #d60017;
+  border-style: none;
+  border-radius: 6px;
+}
+
+button:hover, button:focus {
+  background: #a20000;
+  transition: .5s;
 }
